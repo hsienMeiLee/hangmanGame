@@ -15,7 +15,7 @@ const HangmanWord = ({guessedLetters, wordToGuess, reveal} : HangmanWordProps) =
         fontFamily : "monospace"
     }}>
         {wordToGuess.split("").map((letter, index) => (
-            <span style={{
+            <span key={index} style={{
                 borderBottom : ".1em solid black"
             }}>
                 <span style={{
